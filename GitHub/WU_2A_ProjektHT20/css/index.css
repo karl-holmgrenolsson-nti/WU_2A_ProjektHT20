@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+}
+
+.gridwrapper {
+
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+     "he he he"
+    "n1 n2 n3";
+}
+
+.nav1 {
+
+    grid-area: n1;
+    background-color: black;
+}
+
+.nav2 {
+
+    grid-area: n2;
+    background-color: black;
+}
+
+.nav3 {
+
+    grid-area: n3;
+    background-color:black;
+}
+
+.header {
+
+    grid-area: he;
+    background-color: none;
+}
+
+.text_position {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration-line: none;
+
+}
+
+.background {
+    background-image: url(/img/stephane-juban-DI8Bf6K1134-unsplash.jpg);
+    background-size: cover;
+}
